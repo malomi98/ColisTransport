@@ -1,0 +1,27 @@
+DESCRIPTION
+Plateforme pour service à la demande qui met en relation des  clients et des prestataires.
+Les clients peuvent contracter en ligne avec un prestataire, et le noter après service fait. 
+
+PROFILS UTILISATEUR
+Client
+Prestataire
+Administrateur de la plateforme
+
+FONCTIONNALITES/PROFIL
+*client*
+-créer un compte
+-rechercher les services listés
+-afficher les prestataires d'un type de service
+-choisir un prestataire
+-proposer un contrat à un prestataire
+-noter un prestataire
+
+*prestataire*
+-créer un compte
+-s'enregistrer comme prestataire d'un service
+-accepter un contrat
+
+*administrateur*
+-bloquer un utilisateur
+-créer un service
+-notifier un utilisateur
