@@ -1,69 +1,51 @@
 package sn.verone.service.console;
 
-import sn.verone.domain.DetailPrestation;
-import sn.verone.domain.Prestataire;
-import sn.verone.domain.Prestation;
-import sn.verone.repository.DetailPrestationRepository;
+import sn.verone.domain.*;
 import sn.verone.service.DisplayService;
 
 public class ConsoleDisplayService implements DisplayService {
 
-    private final DetailPrestationRepository detailPrestationRepository;
-
-    public ConsoleDisplayService(DetailPrestationRepository detailPrestationRepository) {
-        this.detailPrestationRepository = detailPrestationRepository;
-    }
 
     public void afficherBienvenu() {
-        System.out.println("Bienvenu sur la plateforme service à la demande!");
+        System.out.println("Bienvenu sur la plateforme colis transfert!");
     }
 
     public void afficherMenuPrincipal() {
-        System.out.println("> l pour lister les services disponibles ");
+        System.out.println("> l pour lister les annonces disponibles ");
     }
 
-    public void afficherListeServices(Prestation[] prestations) {
-        System.out.println("Les services disponibles sont:");
-        for (int i = 0; i < prestations.length; i++) {
-            Prestation prestation = prestations[i];
-            System.out.println(String.format("> %s %s", prestation.getId(), prestation.getNom()));
+    public void afficherListeAnnonces(Annonce[] annonces) {
+        System.out.println("Les anonces disponibles sont:");
+        for (int i = 0; i < annonces.length; i++) {
+            Annonce annonce = annonces[i];
+            System.out.println(String.format(">" +
+                    " Id: %s \n" +
+                    "Nombre de kilos: %s \n" +
+                    "Prix par kilos: %s \n" +
+                    "Date de depart %s \n" +
+                    "Date d'arrivee %s \n " +
+                    "Lieu de depart %s \n " +
+                    "Lieu d'arrivee %s \n " +
+                    "Telephone principal %s \n" +
+                    "Telephone secondaire %s \n", annonce.getId(), annonce.getNbrKg(), annonce.getPrixKilo(), annonce.getDateD(), annonce.getDateA(), annonce.getLieuDepart(), annonce.getLieuArrive(), annonce.getTelDepart(), annonce.getTelArrive()));
         }
     }
 
-    public void afficherPrestataires(Prestation prestation, Prestataire[] prestataires) {
-        System.out.println(String.format("La liste des prestataires %s :", prestation.getNom()));
-        for (int i = 0; i < prestataires.length; i++) {
-            Prestataire prestataire = prestataires[i];
-            System.out.println(String.format("> %s %s %s", prestataire.getId(), prestataire.getPrenom(), prestataire.getNom()));
-        }
+    @Override
+    public void afficherUserAnnonce(User user) {
+        System.out.println(String.format("L'utilisateur qui a emis cette annonce est :"));
+        System.out.println(String.format("> " +
+                "Id: %s \n" +
+                "Nom complet: %s\n" +
+                "numero de la carte: %s\n", user.getId(), user.getNomComplet(), user.getNumCarte()));
     }
 
-    public void afficherDetailsPrestation() {
-        System.out.println("Les détails des prestations de Alassane Sene : ");
-        DetailPrestation[] detailPrestations = detailPrestationRepository.getAll();
-        for (int i = 0; i <detailPrestations.length; i++) {
-            DetailPrestation detailPrestation = detailPrestations[i];
-            System.out.println(
-                    String.format(
-                            "> %s %s : %s",
-                            detailPrestation.getId(),
-                            detailPrestation.getDetails(),
-                            detailPrestation.getPrix()
-                    )
-            );
-        }
-    }
-
-    public void afficherDetailsContrat() {
-        System.out.println("Prestation Alassane Sene: Course Dakar 2500 ");
-    }
-
-    public void afficherDemandeHeure() {
-        System.out.println("Quelle heure voulez-vous (hh:mm) ?");
-    }
-
-    public void afficherConfirmation(String heure) {
-        System.out.println(String.format("OK pour %s", heure));
+    @Override
+    public void afficherTypeAnnonce(TypeAnnonce typeAnnonce) {
+        System.out.println(String.format("Cette annonce est de type :"));
+        System.out.println(String.format("> " +
+                "Id: %s \n" +
+                "Libelle : %s\n", typeAnnonce.getId(),  typeAnnonce.getLibelle()));
     }
 
     public void afficherOptionInconnue() {

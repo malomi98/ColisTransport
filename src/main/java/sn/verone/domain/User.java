@@ -15,6 +15,12 @@ public class User {
         
     }
 
+    public User(int id, String numCarte, String nomComplet) {
+        this.id = id;
+        this.numCarte = numCarte;
+        this.nomComplet = nomComplet;
+    }
+
     public User(int id, String numCarte, String nationalite, String email, String password, String photo, String nomComplet, String adresse, Profil profil) {
         this.id = id;
         this.numCarte = numCarte;

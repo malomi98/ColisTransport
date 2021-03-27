@@ -1,13 +1,9 @@
 package sn.verone.controller;
 
-import sn.verone.repository.DetailPrestationRepository;
-import sn.verone.repository.PrestataireRepository;
-import sn.verone.repository.PrestationRepository;
+import sn.verone.repository.AnnonceRepository;
 import sn.verone.repository.jdbc.DataSource;
-import sn.verone.repository.jdbc.JdbcBasedPrestationRepository;
+import sn.verone.repository.jdbc.JdbcBasedAnnonceRepository;
 import sn.verone.repository.jdbc.MysqlDataSource;
-import sn.verone.repository.ram.ArrayBasedDetailPrestationRepository;
-import sn.verone.repository.ram.ListBasedPrestataireRepository;
 import sn.verone.service.DisplayService;
 import sn.verone.service.MenuService;
 import sn.verone.service.console.ConsoleDisplayService;
@@ -25,12 +21,10 @@ public class ClientController {
     private final MenuService scannerMenuService ;
 
     public ClientController(){
-        DetailPrestationRepository detailPrestationRepository = new ArrayBasedDetailPrestationRepository();
         DataSource dataSource = new MysqlDataSource();
-        displayService = new ConsoleDisplayService(detailPrestationRepository);
-        PrestationRepository prestationRepository = new JdbcBasedPrestationRepository(dataSource);
-        PrestataireRepository prestataireRepository = new ListBasedPrestataireRepository();
-        scannerMenuService = new ScannerMenuService(displayService, prestationRepository, prestataireRepository );
+        displayService = new ConsoleDisplayService();
+        AnnonceRepository annonceRepository = new JdbcBasedAnnonceRepository(dataSource);
+        scannerMenuService = new ScannerMenuService(displayService, annonceRepository);
     }
 
     public void process(){

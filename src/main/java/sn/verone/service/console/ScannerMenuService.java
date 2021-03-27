@@ -1,9 +1,7 @@
 package sn.verone.service.console;
 
-import sn.verone.domain.Prestataire;
-import sn.verone.domain.Prestation;
-import sn.verone.repository.PrestataireRepository;
-import sn.verone.repository.PrestationRepository;
+import sn.verone.domain.*;
+import sn.verone.repository.AnnonceRepository;
 import sn.verone.service.DisplayService;
 import sn.verone.service.MenuService;
 
@@ -12,14 +10,12 @@ import java.util.Scanner;
 public class ScannerMenuService implements MenuService {
     private final DisplayService displayService;
     private final Scanner scanner;
-    private final PrestationRepository prestationRepository;
-    private final PrestataireRepository prestataireRepository;
+    private final AnnonceRepository annonceRepository;
 
-    public ScannerMenuService(DisplayService displayService, PrestationRepository prestationRepository, PrestataireRepository prestataireRepository) {
+    public ScannerMenuService(DisplayService displayService, AnnonceRepository annonceRepository) {
         this.displayService = displayService;
-        this.prestataireRepository = prestataireRepository;
+        this.annonceRepository = annonceRepository;
         this.scanner = new Scanner(System.in);
-        this.prestationRepository = prestationRepository;
     }
 
 
@@ -28,31 +24,23 @@ public class ScannerMenuService implements MenuService {
     }
 
     private void afficherMenu( String choix) {
-        Prestation[] prestations = prestationRepository.getAll();
+        Annonce[] annonces = annonceRepository.getAll();
         if("l".equalsIgnoreCase(choix)){
-            displayService.afficherListeServices(prestations);
-            int idPrestation = scanner.nextInt();
+            displayService.afficherListeAnnonces(annonces);
+            System.out.println("Saisir l'id d'une annonce pour voir ses details : \n");
+            int idAnnonce = scanner.nextInt();
 
-            //get prestation by id
-            Prestation prestation = prestationRepository.getById(idPrestation);
-            //get prestataires by prestation
-            Prestataire[] prestataires = prestataireRepository.getAllByPrestation(prestation);
-            //afficher les prestataires qui fournissent ce service
-            displayService.afficherPrestataires(prestation, prestataires);
+            //get annonce by id
+            Annonce annonce = annonceRepository.findById(idAnnonce);
+            //get type by annonce
+            TypeAnnonce type = annonce.getTypeAnnonce();
+            //afficher le type de cette annonce
+            displayService.afficherTypeAnnonce(type);
 
-            int idPrestataire = scanner.nextInt();
-            Prestataire prestataire = prestataireRepository.findById(idPrestataire);
-            if(2 == idPrestataire){
-                displayService.afficherDetailsPrestation();
-
-                int idDetailPrestation = scanner.nextInt();
-                if(3 == idDetailPrestation){
-                    displayService.afficherDetailsContrat();
-                    displayService.afficherDemandeHeure();
-                    String heure = scanner.next();
-                    displayService.afficherConfirmation(heure);
-                }
-            }
+            //get user by annonce
+            User user = annonce.getUser();
+            //afficher l'utilisateur qui a pubie cette annonce
+            displayService.afficherUserAnnonce(user);
         }
         //afficher le menu inconnu
         else {

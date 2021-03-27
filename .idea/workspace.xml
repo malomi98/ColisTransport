@@ -5,8 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8af28610-8f5d-4e24-a2e4-5bc9a397c9d0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_11_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/controller/PrestataireController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/domain/DetailPrestation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/domain/Prestataire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/domain/Prestation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/AnnonceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/repository/AnnonceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/DetailPrestationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/PrestataireRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/PrestationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jdbc/JdbcBasedAnnonceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jdbc/JdbcBasedAnnonceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jdbc/JdbcBasedDetailPrestationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jdbc/JdbcBasedPrestataireRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jdbc/JdbcBasedPrestationRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jdbc/MysqlDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jdbc/MysqlDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/jpa/JPADetailPrestationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/ram/ArrayBasedDetailPrestationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/ram/ArrayBasedPrestationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/ram/ArrayBasedProfilRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/repository/ram/ArrayBasedProfilRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/ram/ListBasedAnnonceRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/repository/ram/ListBasedAnnonceRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/repository/ram/ListBasedPrestataireRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/service/DisplayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/service/DisplayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/service/console/ConsoleDisplayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/service/console/ConsoleDisplayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/service/console/ScannerMenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/service/console/ScannerMenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sn/verone/service/web/WebDisplayService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sn/verone/service/web/WebDisplayService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sn/verone/repository/jdbc/JdbcBasedPrestationRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sn/verone/repository/jdbc/JdbcBasedPrestationRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +78,10 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="sn.verone.ServiceOnDemandApp" />
-      <module name="services-on-demand" />
+      <module name="my-app" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -73,5 +112,44 @@
       <updated>1616025820285</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="254" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1616812769607">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1616812769607" />
+    <state x="648" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1616812665391">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="648" y="318" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1600.860@0.0.1600.860" timestamp="1616812665391" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1616812867298">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1616812867298" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1616812867297">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1616812867297" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1616812867297">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1616812867297" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1616812867298">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1616812867297" />
   </component>
 </project>

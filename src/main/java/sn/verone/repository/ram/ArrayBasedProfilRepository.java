@@ -1,7 +1,5 @@
 package sn.verone.repository.ram;
 
-import sn.verone.domain.DetailPrestation;
-import sn.verone.domain.Prestation;
 import sn.verone.domain.Profil;
 import sn.verone.repository.ProfilRepository;
 

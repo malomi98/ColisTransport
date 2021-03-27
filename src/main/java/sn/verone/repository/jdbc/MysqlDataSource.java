@@ -5,9 +5,9 @@ import java.sql.Driver;
 import java.sql.DriverManager;
 
 public class MysqlDataSource implements DataSource {
-    public static final String DB_USER = "dev";
-    public static final String DB_PASSWORD = "dev";
-    public static final String NOM_BASE = "transfert_colis";
+    public static final String DB_USER = "root";
+    public static final String DB_PASSWORD = "";
+    public static final String NOM_BASE = "colis_transfert";
 
     public static final String IP = "localhost";
     public static final String PORT = "3306";

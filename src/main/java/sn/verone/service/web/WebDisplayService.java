@@ -1,7 +1,6 @@
 package sn.verone.service.web;
 
-import sn.verone.domain.Prestataire;
-import sn.verone.domain.Prestation;
+import sn.verone.domain.*;
 import sn.verone.service.DisplayService;
 
 public class WebDisplayService implements DisplayService {
@@ -14,29 +13,21 @@ public class WebDisplayService implements DisplayService {
 
     }
 
-    public void afficherListeServices(Prestation[] prestations) {
+    @Override
+    public void afficherListeAnnonces(Annonce[] annonces) {
 
     }
 
-    public void afficherPrestataires(Prestation prestation, Prestataire[] prestataires) {
+    @Override
+    public void afficherUserAnnonce(User user) {
 
     }
 
-    public void afficherDetailsPrestation() {
+    @Override
+    public void afficherTypeAnnonce(TypeAnnonce typeAnnonce) {
 
     }
 
-    public void afficherDetailsContrat() {
-
-    }
-
-    public void afficherDemandeHeure() {
-
-    }
-
-    public void afficherConfirmation(String heure) {
-
-    }
 
     public void afficherOptionInconnue() {
 

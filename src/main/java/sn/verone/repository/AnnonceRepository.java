@@ -5,6 +5,6 @@ import sn.verone.domain.TypeAnnonce;
 import sn.verone.domain.User;
 
 public interface AnnonceRepository {
-    Annonce[] getAllByUser(User user, TypeAnnonce type);
+    Annonce[] getAll();
     Annonce findById(int idAnnonce);
 }
